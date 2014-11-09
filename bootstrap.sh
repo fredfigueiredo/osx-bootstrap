@@ -21,15 +21,20 @@ fi
 
 # Apps
 apps=(
+  caffeine
   dropbox
   evernote
   firefox
+  github
   google-chrome
   iterm2
+  keepassx
+  utorrent
   vagrant
   virtualbox
   vlc
   sublime-text
+  skitch
   skype
 )
 
