@@ -8,14 +8,17 @@ source parts/functions.sh
 
 echo "### Setting up your OS X..."
 
-confirm 'Install Homebrew and Cask?'
-if test $? == "0"; then
-  source parts/brew.sh
-fi
+parts=(
+  'brew'
+  'cask-apps'
+)
 
-confirm 'Install apps listed in file parts/cask-apps.sh?'
-if test $? == "0"; then
-  source parts/cask-apps.sh
-fi
+for part in "${parts[@]}"
+do
+  confirm "Install $part?"
+  if test $? == "0"; then
+    source parts/$part.sh
+  fi
+done
 
 echo "### You're all done. Have a nice day!"
