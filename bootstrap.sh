@@ -11,7 +11,7 @@ echo "### Setting up your OS X..."
 parts=(
   'NOINSTRUCTION::functions::0'
   'Install Homebrew::brew::1'
-  'Install apps listed in cask-apps.sh::cask-apps::1'
+  'Install applications listed in cask-apps.sh::cask-apps::1'
 )
 
 for part in "${parts[@]}"
@@ -22,7 +22,7 @@ do
   ask=${part##*::} # Removes instruction and file name
 
   if test $ask == 1; then
-    confirm "Install $instruction?"
+    confirm "$instruction?"
     if test $? == "0"; then
       source parts/$file.sh
     fi
