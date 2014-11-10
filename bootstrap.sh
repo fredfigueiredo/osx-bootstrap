@@ -1,55 +1,21 @@
 #!/usr/bin/env bash
 
+# Clear terminal screen
+clear
+
+# Loads script common functions
+source parts/functions.sh
+
 echo "### Setting up your OS X..."
 
-# Check for Homebrew (OS X Packet Manager) + Command Line Tools
-# Install if we do not have it
-if test ! $(which brew); then
-  echo "### Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew doctor
+confirm 'Install Homebrew and Cask?'
+if test $? == "0"; then
+  source parts/brew.sh
 fi
 
-# Update homebrew recipes
-brew update
-
-# Check for Homebrew Cask
-# Install if we do not have it
-if test ! $(brew list | grep "brew-cask"); then
-  brew install caskroom/cask/brew-cask
+confirm 'Install apps listed in file parts/cask-apps.sh?'
+if test $? == "0"; then
+  source parts/cask-apps.sh
 fi
-
-# Apps
-apps=(
-  caffeine
-  dropbox
-  evernote
-  firefox
-  github
-  google-chrome
-  iterm2
-  keepassx
-  utorrent
-  vagrant
-  virtualbox
-  vlc
-  sublime-text
-  skitch
-  skype
-)
-
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "### Installing apps..."
-for app in "${apps[@]}"
-do
-  if test ! $(brew cask list | grep $app); then
-    brew cask install --appdir="/Applications" $app
-  fi
-done
-
-# Cleanup downloaded files
-brew cask cleanup
-brew cleanup
 
 echo "### You're all done. Have a nice day!"
