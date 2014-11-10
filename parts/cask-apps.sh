@@ -1,5 +1,8 @@
-# Applications to be installed
+# Homebrew Cask usage: https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md
+
+# List of applications to be installed
 # Check existing applications with 'brew cask search'
+# Change the list to reflect your needs
 apps=(
   caffeine
   dropbox
@@ -18,17 +21,12 @@ apps=(
   skype
 )
 
-# Homebrew is required
-if test $(which brew); then
-  # Check for Homebrew Cask
-  # Install if we do not have it
-  if test ! $(brew list | grep "brew-cask"); then
-    brew install caskroom/cask/brew-cask
-  fi
+# Homebrew Cask is required
+if test $(brew list | grep 'brew-cask'); then
 
   # Install apps to /Applications
   # Default is: /Users/$user/Applications
-  echo "### Installing apps..."
+  echo '### Installing apps...'
   for app in "${apps[@]}"
   do
     if test ! $(brew cask list | grep $app); then
@@ -39,5 +37,5 @@ if test $(which brew); then
   # Cleanup downloaded files
   brew cask cleanup
 else
-  echo 'Skiping, Homebrew not installed'
+  echo 'Skipping, Homebrew Cask not installed!'
 fi

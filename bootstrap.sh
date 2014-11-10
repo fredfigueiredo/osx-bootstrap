@@ -11,7 +11,8 @@ echo "### Setting up your OS X..."
 parts=(
   'NOINSTRUCTION::functions::0'
   'Install Homebrew::brew::1'
-  'Install applications listed in cask-apps.sh::cask-apps::1'
+  'Install Homebrew Cask (Homebrew is required)::cask::1'
+  'Install applications listed in parts/cask-apps.sh (Homebrew Cask is required)::cask-apps::1'
 )
 
 for part in "${parts[@]}"
