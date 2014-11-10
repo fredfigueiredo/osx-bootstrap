@@ -3,21 +3,31 @@
 # Clear terminal screen
 clear
 
-# Loads script common functions
-source parts/functions.sh
-
 echo "### Setting up your OS X..."
 
+# Bootstrap parts separated by instruction, filename and whether or not it asks for confirmation
+# Example: 'Install APP instruction::FILENAME::0'
+# Confirmation: 0 => Do not ask; 1 => Ask
 parts=(
-  'brew'
-  'cask-apps'
+  'NOINSTRUCTION::functions::0'
+  'Install Homebrew::brew::1'
+  'Install apps listed in cask-apps.sh::cask-apps::1'
 )
 
 for part in "${parts[@]}"
 do
-  confirm "Install $part?"
-  if test $? == "0"; then
-    source parts/$part.sh
+  instruction=${part%%::*} # Removes filename and ask flag
+  tmp=${part#*::} # Removes instruction
+  file=${tmp%%::*} # Removes ask flag
+  ask=${part##*::} # Removes instruction and file name
+
+  if test $ask == 1; then
+    confirm "Install $instruction?"
+    if test $? == "0"; then
+      source parts/$file.sh
+    fi
+  else
+    source parts/$file.sh
   fi
 done
 
