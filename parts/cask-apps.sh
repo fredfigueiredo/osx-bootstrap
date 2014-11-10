@@ -19,6 +19,7 @@ apps=(
   sublime-text
   skitch
   skype
+  the-unarchiver
 )
 
 # Homebrew Cask is required
