@@ -19,7 +19,7 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 ## Missing
 
 What's still missing? (you're welcomed to contribute):
-* git part
+* Create ssh key in git part
 * node js + grunt part
 * dotfiles part
 * Sublime 2 config part
@@ -29,6 +29,7 @@ What's still missing? (you're welcomed to contribute):
 * Upgrade & Uninstall
 * References & Credits
 * Apps installed via cask are not available in Launchpad (i.e. shortcuts)
+* Make Homebrew required (all depend on it)
 
 ## Testing
 

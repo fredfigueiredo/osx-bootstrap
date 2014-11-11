@@ -24,6 +24,7 @@ parts=(
   'brew::1::Install Homebrew'
   'cask::1::Install Homebrew Cask (Homebrew is required)'
   'cask-apps::1::Install apps listed in parts/cask-apps.sh (Cask is required)'
+  'git::1::Install and configure git (Homebrew is required)'
 )
 
 for part in "${parts[@]}"
