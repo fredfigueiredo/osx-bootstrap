@@ -27,7 +27,7 @@ if test $(brew list | grep 'brew-cask'); then
 
   # Install apps to /Applications
   # Default is: /Users/$user/Applications
-  echo '### Installing apps...'
+  info 'Installing apps...'
   for app in "${apps[@]}"
   do
     if test ! $(brew cask list | grep $app); then
@@ -38,5 +38,5 @@ if test $(brew list | grep 'brew-cask'); then
   # Cleanup downloaded files
   brew cask cleanup
 else
-  echo 'Skipping, Homebrew Cask not installed!'
+  log 'Skipping, Homebrew Cask not installed!'
 fi

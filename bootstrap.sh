@@ -14,7 +14,7 @@ fi
 
 cd ~/.osx-bootstrap
 
-echo "### Setting up your OS X..."
+echo '### Setting up your OS X...'
 
 # Bootstrap parts separated by filename, ask flag and instruction
 # Ask flag: 0 => Do not ask; 1 => Ask for confirmation
@@ -43,4 +43,4 @@ do
   fi
 done
 
-echo "### You're all done. Have a nice day!"
+info "You're all done. Have a nice day!"
