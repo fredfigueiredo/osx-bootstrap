@@ -4,15 +4,15 @@
 clear
 
 # Download the OS X bootstrap scripts
-#if test ! -d ~/.osx-bootstrap; then
-#  echo '### Preparing to setup your OS X...'
-#  mkdir ~/.osx-bootstrap && cd $_
-#  curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/master.zip
-#  tar -xf master.zip --strip 1
-#  rm master.zip
-#fi
+if test ! -d ~/.osx-bootstrap; then
+  echo '### Preparing to setup your OS X...'
+  mkdir ~/.osx-bootstrap && cd $_
+  curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/master.zip
+  tar -xf master.zip --strip 1
+  rm master.zip
+fi
 
-#cd ~/.osx-bootstrap
+cd ~/.osx-bootstrap
 
 echo '### Setting up your OS X...'
 
