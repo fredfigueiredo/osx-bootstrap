@@ -1,10 +1,10 @@
 # OS X Bootstrap
 
-> Set up your Max OS X workstation via one single script.
+> Set up Mac OS X workstation via one single script. You decide what to install.
 
 ## Requirements
 
-- OS X (10.8 or 10.9) - clean installation, preferably
+* OS X (10.8 or 10.9) - clean installation, preferably
 
 ## Usage
 
@@ -16,29 +16,37 @@ bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/ma
 
 Follow the instructions, sit back, relax, and enjoy the ride.
 
+## What it installs?
+
+* Homebrew (required)
+* Command-line tools
+* Applications (e.g. Chrome, Dropbox, etc)
+  * Check or edit file: `parts/cask-apps.sh`
+* Git source code management system
+* Oh-My-zsh
+...
+
 ## Missing
 
-What's still missing? (you're welcomed to contribute):
+* Request for root pass at start
 * Create ssh key in git part
 * node js + grunt part
 * dotfiles part
 * Sublime 2 config part
+* ZSH custom configurations part
 * Custom configurations part
-* Request for root pass at start
 * Instructions on how to test
 * Upgrade & Uninstall
 * References & Credits
-* Apps installed via cask are not available in Launchpad (i.e. shortcuts)
-* Make Homebrew required (all depend on it)
 
 ## Testing
 
-...
+(tbd)
 
 ## References
 
-...
+(tbd)
 
 ## Credits
 
-...
+(tbd)
