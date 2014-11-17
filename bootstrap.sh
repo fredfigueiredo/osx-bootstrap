@@ -3,16 +3,17 @@
 # Clear terminal screen
 clear
 
-# Download the OS X bootstrap scripts
-if test ! -d ~/.osx-bootstrap; then
-  echo '### Preparing to setup your OS X...'
-  mkdir ~/.osx-bootstrap && cd $_
-  curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/master.zip
-  tar -xf master.zip --strip 1
-  rm master.zip
-fi
+# Define variables
+scripts_folder=~/.osx-bootstrap
 
-cd ~/.osx-bootstrap
+# Download or update the OS X bootstrap scripts
+echo '### Preparing to setup your OS X...'
+if test ! -d $scripts_folder; then
+  mkdir $scripts_folder
+fi
+cd $scripts_folder
+curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/master.zip
+tar -xf master.zip --strip 1 && rm master.zip
 
 echo '### Setting up your OS X...'
 
