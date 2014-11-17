@@ -9,6 +9,7 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew recipes
+info 'Updating Homebrew...'
 brew update
 
 # Cleanup downloaded files
