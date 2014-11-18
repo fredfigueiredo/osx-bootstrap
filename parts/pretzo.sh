@@ -1,10 +1,16 @@
-# Pretzo:
+# Pretzo: https://github.com/sorin-ionescu/prezto
 
 # Check if pretzo is already installed
 if test ! -d ~/.zprezto; then
 
+  # Launch zsh shell
+  exec /bin/zsh
+
   # Clone the presto repo
   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+  # Create a new Zsh configuration
+  setopt EXTENDED_GLOB
 
   # Create symbolic links
   [ ! -h ~/.zlogin ] && ln -s ~/.zprezto/runcoms/zlogin ~/.zlogin > /dev/null 2>&1
@@ -16,6 +22,9 @@ if test ! -d ~/.zprezto; then
 
   # Change default shell to zsh
   chsh -s /bin/zsh
+
+  # Exits the zsh shell
+  exit
 
 else
   log 'Pretzo already installed.'
