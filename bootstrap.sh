@@ -12,7 +12,7 @@ if test ! -d $scripts_folder; then
   mkdir $scripts_folder
 fi
 cd $scripts_folder
-curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/master.zip
+curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/zsh.zip
 tar -xf master.zip --strip 1 && rm master.zip
 
 echo '### Setting up your OS X...'
