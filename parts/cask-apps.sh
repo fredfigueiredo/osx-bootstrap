@@ -16,6 +16,7 @@ apps=(
   vagrant
   virtualbox
   vlc
+  sourcetree
   sublime-text
   skitch
   skype

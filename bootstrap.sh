@@ -16,6 +16,14 @@ cd $scripts_folder
 curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/${scripts_file}
 tar -xf $scripts_file --strip 1 && rm $scripts_file
 
+echo
+echo 'Asking for the administrator password upfront!'
+# Asks for sudo password upfront
+sudo -v
+# Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+echo
 echo '### Setting up your OS X...'
 
 # Bootstrap parts separated by filename, ask flag and instruction
