@@ -5,6 +5,7 @@ clear
 
 # Define variables
 scripts_folder=~/.osx-bootstrap
+scripts_file='zsh.zip'
 
 # Download or update the OS X bootstrap scripts
 echo '### Preparing to setup your OS X...'
@@ -12,8 +13,8 @@ if test ! -d $scripts_folder; then
   mkdir $scripts_folder
 fi
 cd $scripts_folder
-curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/zsh.zip
-tar -xf master.zip --strip 1 && rm master.zip
+curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/${scripts_file}
+tar -xf $scripts_file --strip 1 && rm $scripts_file
 
 echo '### Setting up your OS X...'
 
