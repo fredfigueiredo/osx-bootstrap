@@ -1,13 +1,22 @@
-#!/bin/zsh
+# Pretzo:
 
-# Open new shell, open zsh and clone the presto repo
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# Check if pretzo is already installed
+if test ! -d ~/.zprezto; then
 
-# Get prezto's default configuration
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+  # Clone the presto repo
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
-# Change default shell to zsh
-chsh -s /bin/zsh
+  # Create symbolic links
+  [ ! -h ~/.zlogin ] && ln -s ~/.zprezto/runcoms/zlogin ~/.zlogin > /dev/null 2>&1
+  [ ! -h ~/.zlogout ] && ln -s ~/.zprezto/runcoms/zlogout ~/.zlogout > /dev/null 2>&1
+  [ ! -h ~/.zpreztorc ] && ln -s ~/.zprezto/runcoms/zpreztorc ~/.zpreztorc > /dev/null 2>&1
+  [ ! -h ~/.zprofile ] && ln -s ~/.zprezto/runcoms/zprofile ~/.zprofile > /dev/null 2>&1
+  [ ! -h ~/.zshenv ] && ln -s ~/.zprezto/runcoms/zshenv ~/.zshenv > /dev/null 2>&1
+  [ ! -h ~/.zshrc ] && ln -s ~/.zprezto/runcoms/zshrc ~/.zshrc > /dev/null 2>&1
+
+  # Change default shell to zsh
+  chsh -s /bin/zsh
+
+else
+  log 'Pretzo already installed.'
+fi
