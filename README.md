@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* OS X (10.8 or 10.9) - clean installation, preferably
+* OS X (10.8 or 10.9) - clean install
 
 ## Usage
 
@@ -16,22 +16,19 @@ bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/ma
 
 Follow the instructions, sit back, relax, and enjoy the ride.
 
-## What it installs?
+## What is installed?
 
-* Homebrew (required)
-* Command-line tools
+* Homebrew
+* Xcode Command Line Tools
 * Applications (e.g. Chrome, Dropbox, etc)
   * Check or edit file: `parts/cask-apps.sh`
 * Git source code management system
-* Oh-My-zsh
-...
+* Yard
 
 ## Missing
 
-* Request for root pass at start
 * Create ssh key in git part
 * node js + grunt part
-* dotfiles part
 * Sublime 2 config part
 * ZSH custom configurations part
 * Custom configurations part
