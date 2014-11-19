@@ -1,9 +1,9 @@
-# Yard: http://skwp.github.io/dotfiles/
+# YADR: http://skwp.github.io/dotfiles/
 
-# Check if yard is already installed
-if test ! -d ~/.yard; then
-  info 'Installing Yard...'
+# Check if YADR is already installed
+if test ! -d ~/.yadr; then
+  info 'Installing YADR...'
   sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
 else
-  log 'Yard already installed.'
+  log 'YADR already installed.'
 fi

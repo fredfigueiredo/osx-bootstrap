@@ -5,7 +5,7 @@ clear
 
 # Define variables
 scripts_folder=~/.osx-bootstrap
-scripts_file='master.zip'
+scripts_file='npm-zshcustom.zip'
 
 # Download or update the OS X bootstrap scripts
 echo '### Preparing to setup your OS X...'
@@ -35,7 +35,7 @@ parts=(
   'cask::0'
   'cask-apps::1::Install apps listed in parts/cask-apps.sh'
   'git::1::Install and configure git'
-  'yard::1::Install shell awesomeness and much more (with Yard)'
+  'yadr::1::Install shell awesomeness and much more (with YADR)'
   'npm::1::Install Node.js, npm, grunt, and others'
 )
 
