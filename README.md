@@ -24,10 +24,10 @@ Follow the instructions, sit back, relax, and enjoy the ride.
   * List of apps in file: `parts/cask-apps.sh`
 * Git source code management system
 * YADR (dotfiles & zsh)
+* Node.js, npm, Yeoman, Bower, Grunt, Compass
 
 ## Missing
 
-* node js + grunt part
 * Sublime 2 config part
 * ZSH custom configurations part
 * Custom configurations part

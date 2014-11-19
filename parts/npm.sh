@@ -14,10 +14,11 @@ if test $(which brew); then
 
     # Install additional modules
     info 'Installing additional modules...'
-    npm install -g yo # Yeoman, scaffolding tool
-    npm install -g bower # Bower, web packet manager tool
+    npm install -g yo        # Yeoman, scaffolding tool
+    npm install -g bower     # Bower, web packet manager tool
     npm install -g grunt-cli # Grunt, build tool
-    gem install compass # Compass, CSS authoring framework
+
+    sudo gem install compass # Compass, CSS authoring framework
 
   else
     log 'Node already installed.'
