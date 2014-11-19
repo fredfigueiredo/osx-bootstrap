@@ -35,7 +35,7 @@ parts=(
   'cask::0'
   'cask-apps::1::Install apps listed in parts/cask-apps.sh'
   'git::1::Install and configure git'
-  'pretzo::1::Install Z shell awesomeness (pretzo)'
+  'yard::1::Install Z shell awesomeness and much more (with Yard)'
 )
 
 for part in "${parts[@]}"
