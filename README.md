@@ -20,14 +20,13 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 
 * Homebrew
 * Xcode Command Line Tools
-* Applications (e.g. Chrome, Dropbox, etc)
-  * Check or edit file: `parts/cask-apps.sh`
+* Applications (e.g. Chrome, Dropbox)
+  * List of apps in file: `parts/cask-apps.sh`
 * Git source code management system
-* Yard
+* YADR (dotfiles & zsh)
 
 ## Missing
 
-* Create ssh key in git part
 * node js + grunt part
 * Sublime 2 config part
 * ZSH custom configurations part
