@@ -5,7 +5,7 @@ clear
 
 # Define variables
 scripts_folder=~/.osx-bootstrap
-scripts_file='zsh.zip'
+scripts_file='master.zip'
 
 # Download or update the OS X bootstrap scripts
 echo '### Preparing to setup your OS X...'
@@ -17,7 +17,7 @@ curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/${scripts_fil
 tar -xf $scripts_file --strip 1 && rm $scripts_file
 
 echo
-echo 'Asking for the administrator password upfront!'
+echo 'Asking for the sudo password upfront...'
 # Asks for sudo password upfront
 sudo -v
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
