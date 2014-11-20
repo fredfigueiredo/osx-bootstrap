@@ -23,13 +23,12 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 * Applications (e.g. Chrome, Dropbox)
   * List of apps in file: `parts/cask-apps.sh`
 * Git source code management system
-* YADR (dotfiles & zsh)
+* YADR (dotfiles & zsh) + customizations
 * Node.js, npm, Yeoman, Bower, Grunt, Compass
 
 ## Missing
 
 * Sublime 2 config part
-* ZSH custom configurations part
 * Custom configurations part
 * Instructions on how to test
 * Upgrade & Uninstall
