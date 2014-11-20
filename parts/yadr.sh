@@ -1,6 +1,6 @@
 # YADR: http://skwp.github.io/dotfiles/
 
-$custom_folder='~/.osx-bootstrap/parts/custom'
+custom_folder='~/.osx-bootstrap/parts/custom'
 
 # Check if YADR is already installed
 if test ! -d ~/.yadr; then
