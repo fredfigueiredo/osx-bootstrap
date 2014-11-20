@@ -5,7 +5,7 @@ clear
 
 # Define variables
 scripts_folder=~/.osx-bootstrap
-scripts_file='npm-zshcustom.zip'
+scripts_file='master.zip'
 
 # Download or update the OS X bootstrap scripts
 echo '### Preparing to setup your OS X...'
