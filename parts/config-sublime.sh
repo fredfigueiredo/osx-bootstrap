@@ -1,6 +1,6 @@
 # Configure Sublime Text 2: http://www.sublimetext.com/2
 
-custom_folder="$HOME/projects/osx-bootstrap/parts/custom"
+sublime_templates="$HOME/.osx-bootstrap/templates/sublime"
 sublime_user_folder="$HOME/Library/Application Support/Sublime Text 2"
 sublime_bin_folder='/Applications/Sublime Text 2.app/Contents/SharedSupport/bin'
 
@@ -9,7 +9,7 @@ if test -d "$sublime_user_folder" && test -d "$sublime_bin_folder"; then
   info 'Customizing Sublime Text2...'
 
   # Set user preferences
-  cp -f "$custom_folder/Preferences.sublime-settings" \
+  cp -f "$sublime_templates/Preferences.sublime-settings" \
     "$sublime_user_folder/Packages/User"
 
   # Install Package Control
@@ -17,7 +17,7 @@ if test -d "$sublime_user_folder" && test -d "$sublime_bin_folder"; then
       -o "$sublime_user_folder/Installed Packages/Package Control.sublime-package"
 
   # Add packages
-  cp -f "$custom_folder/Package Control.sublime-settings" \
+  cp -f "$sublime_templates/Package Control.sublime-settings" \
     "$sublime_user_folder/Packages/User"
 
   # Set alias to Sublime 2
