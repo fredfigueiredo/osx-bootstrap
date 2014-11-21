@@ -38,16 +38,6 @@ If you want to test this script, before setting up your own machine, you can do 
 Check how to create a
   [Yosemite VM with Virtual Box](http://sqar.blogspot.de/2014/10/installing-yosemite-in-virtualbox.html).
 
-## References
-
-For too long I wanted to have a quick way to setup my own machine. Although there are several alternatives to do so, I choose to.
-
-Regardless, similar and projects that inspired me:
-
-* 1
-* 2
-* 3
-
 ## Contributing
 
 Feel free to contribute to this project with your own ideas and needs.
