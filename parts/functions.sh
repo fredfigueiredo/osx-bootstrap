@@ -19,5 +19,6 @@ function log() {
 }
 
 function pause() {
+  echo ''
   read -p "Press [Enter] key to continue..."
 }
