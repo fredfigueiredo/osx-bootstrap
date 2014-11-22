@@ -31,8 +31,10 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 * OSX configurations part (e.g. mouse speed)
 * Separate Compass from Grunt part
 * Add introductory instructions
-* Improve messages throught install
+* Improve messages during install
 * Add option to confirm or not installing each part
+* Check if apps are already installed
+* Confirm each app or choose what to install
 * Custom configurations part
 * Uninstall script
 

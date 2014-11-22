@@ -7,10 +7,7 @@ clear
 scripts_folder="$HOME/.osx-bootstrap"
 scripts_file='dev.zip'
 
-# Loads common functions
-source "$scripts_folder/parts/functions.sh"
-
-info 'Preparing to setup your OS X...'
+echo '## Preparing to setup your OS X...'
 # Download or update the OS X Bootstrap scripts
 if test ! -d $scripts_folder; then
   mkdir $scripts_folder
@@ -18,6 +15,9 @@ fi
 cd $scripts_folder
 curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/${scripts_file}
 tar -xf $scripts_file --strip 1 && rm $scripts_file
+
+# Loads common functions
+source "$scripts_folder/parts/functions.sh"
 
 info 'Asking for the sudo password upfront...'
 sudo -v
