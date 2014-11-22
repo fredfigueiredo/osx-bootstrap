@@ -11,7 +11,7 @@
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/dev/install.sh)
 ```
 
 Follow the instructions, sit back, relax, and enjoy the ride.

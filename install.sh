@@ -4,8 +4,8 @@
 clear
 
 # Define variables
-scripts_folder=~/.osx-bootstrap
-scripts_file='master.zip'
+scripts_folder="$HOME/.osx-bootstrap"
+scripts_file='dev.zip'
 
 # Loads common functions
 source "$scripts_folder/parts/functions.sh"
