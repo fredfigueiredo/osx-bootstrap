@@ -35,10 +35,10 @@ parts=(
   'cask::0'
   'cask-apps::1::Install apps listed in parts/cask-apps.sh'
   'git::1::Install git'
-  'yadr::1::Install shell awesomeness and much more (with YADR)'
-  'npm::1::Install Node.js, npm, grunt, and others'
   'config-git::1::Configure git and github'
+  'yadr::1::Install shell awesomeness and much more (with YADR)'
   'config-zsh::1::Configure ZSH (requires YARD)'
+  'npm::1::Install Node.js, npm, grunt, and others'
   'config-sublime::1::Configure Sublime Text 2'
 )
 
