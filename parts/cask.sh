@@ -9,7 +9,7 @@ if test $(which brew); then
     info 'Installing Homebrew Cask...'
     brew install caskroom/cask/brew-cask
   else
-    log 'Already installed.'
+    log 'Homebrew Cask already installed.'
   fi
 
   # Cleanup downloaded files

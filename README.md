@@ -11,7 +11,7 @@
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/master/bootstrap.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/master/install.sh)
 ```
 
 Follow the instructions, sit back, relax, and enjoy the ride.
@@ -26,10 +26,15 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 * YADR (dotfiles & zsh) + customizations
 * Node.js, npm, Yeoman, Bower, Grunt, Compass
 
-## Missing
+## To be Added
 
+* OSX configurations part (e.g. mouse speed)
+* Separate Compass from Grunt part
+* Add introductory instructions
+* Improve messages throught install
+* Add option to confirm or not installing each part
 * Custom configurations part
-* Upgrade & Uninstall
+* Uninstall script
 
 ## Testing
 
@@ -41,3 +46,5 @@ Check how to create a
 ## Contributing
 
 Feel free to contribute to this project with your own ideas and needs.
+
+Have a look at `install.sh` and you will quickly understand how to add / change parts.

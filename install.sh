@@ -11,7 +11,7 @@ scripts_file='master.zip'
 source "$scripts_folder/parts/functions.sh"
 
 info 'Preparing to setup your OS X...'
-# Download or update the OS X bootstrap scripts
+# Download or update the OS X Bootstrap scripts
 if test ! -d $scripts_folder; then
   mkdir $scripts_folder
 fi
@@ -20,7 +20,6 @@ curl -sLOk https://github.com/fredfigueiredo/osx-bootstrap/archive/${scripts_fil
 tar -xf $scripts_file --strip 1 && rm $scripts_file
 
 info 'Asking for the sudo password upfront...'
-# Asks for sudo password upfront
 sudo -v
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &

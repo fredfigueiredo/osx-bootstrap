@@ -1,7 +1,6 @@
 # Homebrew: http://brew.sh
 
 # Check for Homebrew (OS X Packet Manager) + Command Line Tools
-# Install if we do not have it
 if test ! $(which brew); then
   info 'Installing Homebrew...'
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
