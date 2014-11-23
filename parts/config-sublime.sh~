@@ -9,7 +9,7 @@ if test -d "$sublime_bin_folder"; then
   info 'Customizing Sublime Text2...'
 
   # Open and close sublime to create user folder if needed
-  if test ! -d "$sublime_user_folder"; then
+  if test -d "$sublime_user_folder"; then
     "$sublime_bin_folder/subl"
     sleep 3
   fi
