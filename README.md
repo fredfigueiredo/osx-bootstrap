@@ -11,7 +11,7 @@
 Open a terminal, copy & paste, and run:
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/dev/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/fredfigueiredo/osx-bootstrap/master/install.sh)
 ```
 
 Follow the instructions, sit back, relax, and enjoy the ride.
@@ -36,6 +36,7 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 * Check if apps are already installed
 * Confirm each app or choose what to install
 * Custom configurations part
+* Upgrade script
 * Uninstall script
 
 ## Testing

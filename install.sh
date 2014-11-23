@@ -5,7 +5,7 @@ clear
 
 # Define variables
 scripts_folder="$HOME/.osx-bootstrap"
-scripts_file='dev.zip'
+scripts_file='master.zip'
 
 echo '## Preparing to setup your OS X...'
 # Download or update the OS X Bootstrap scripts
