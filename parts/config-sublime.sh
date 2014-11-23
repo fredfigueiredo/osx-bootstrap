@@ -6,15 +6,16 @@ sublime_bin_folder='/Applications/Sublime Text 2.app/Contents/SharedSupport/bin'
 
 if test -d "$sublime_bin_folder"; then
 
+  info 'Customizing Sublime Text2...'
+
   # Open and close sublime to create user folder if needed
   if test -d "$sublime_user_folder"; then
     "$sublime_bin_folder/subl"
+    sleep 3
   fi
 
   # Closes any open instance of sublime
   kill $(ps aux | grep 'sublime' | awk '{print $2}') 2>/dev/null
-
-  info 'Customizing Sublime Text2...'
 
   # Set user preferences
   cp -f "$sublime_templates/Preferences.sublime-settings" \
