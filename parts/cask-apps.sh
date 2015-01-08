@@ -4,6 +4,7 @@
 # Check existing applications with 'brew cask search'
 # Change the list to reflect your needs
 apps=(
+  1password
   caffeine
   dropbox
   evernote
@@ -11,7 +12,6 @@ apps=(
   github
   google-chrome
   iterm2
-  keepassx
   utorrent
   vagrant
   virtualbox
