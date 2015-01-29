@@ -33,13 +33,27 @@ function install_app() {
 
 # Homebrew Cask is required
 if test $(brew list | grep 'brew-cask'); then
+  # Control var for installing apps without confirmation
+  install_without_confirm=0
 
   # Install apps to /Applications
   # Default is: /Users/$user/Applications
   info 'Installing apps...'
   for app in "${apps[@]}"
   do
-    install_app $app
+
+    # Check if we ask for confirmation
+    if test $install_without_confirm -eq 0; then
+      confirm_all "Install $app?"
+      confirm_response=$?
+      [[ $REPLY =~ ^[aA]$ ]] && install_without_confirm=1
+    fi
+
+    # Install app if response was Yes or All
+    if [ $confirm_response -eq 0 ]; then
+      install_app $app
+    fi
+
   done
 
   # Cleanup downloaded files

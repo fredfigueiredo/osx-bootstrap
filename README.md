@@ -33,8 +33,7 @@ Follow the instructions, sit back, relax, and enjoy the ride.
 * Add introductory instructions
 * Improve messages during install
 * Add option to confirm or not installing each part
-* Check if apps are already installed
-* Confirm each app or choose what to install
+* Check if apps are already installed (not via brew cask)
 * Custom configurations part
 * Upgrade script
 * Uninstall script
