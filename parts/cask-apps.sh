@@ -23,6 +23,14 @@ apps=(
   the-unarchiver
 )
 
+function install_app() {
+  if test ! $(brew cask list | grep $app); then
+    brew cask install --appdir="/Applications" $app
+  else
+    echo "$app already installed."
+  fi
+}
+
 # Homebrew Cask is required
 if test $(brew list | grep 'brew-cask'); then
 
@@ -31,9 +39,7 @@ if test $(brew list | grep 'brew-cask'); then
   info 'Installing apps...'
   for app in "${apps[@]}"
   do
-    if test ! $(brew cask list | grep $app); then
-      brew cask install --appdir="/Applications" $app
-    fi
+    install_app $app
   done
 
   # Cleanup downloaded files
