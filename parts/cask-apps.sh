@@ -5,6 +5,7 @@
 # Change the list to reflect your needs
 apps=(
   1password
+  appcleaner
   caffeine
   dropbox
   evernote
