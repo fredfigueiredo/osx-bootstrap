@@ -6,6 +6,7 @@
 apps=(
   1password
   appcleaner
+  balsamiq-mockups
   caffeine
   dropbox
   evernote
