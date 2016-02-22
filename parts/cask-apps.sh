@@ -10,7 +10,7 @@ apps=(
   dropbox
   evernote
   firefox
-  github
+  github-desktop
   google-chrome
   iterm2
   utorrent
