@@ -5,9 +5,9 @@ if test $(which brew); then
 
   # Check for Homebrew Cask
   # Install if we do not have it
-  if test ! $(brew list | grep 'brew-cask'); then
+  if test ! $(brew list | grep 'cask'); then
     info 'Installing Homebrew Cask...'
-    brew install caskroom/cask/brew-cask
+    brew install cask
   else
     log 'Homebrew Cask already installed.'
   fi
