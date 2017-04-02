@@ -6,19 +6,15 @@
 apps=(
   1password
   appcleaner
-  balsamiq-mockups
   caffeine
   dropbox
   evernote
   firefox
-  github-desktop
+  franz
   google-chrome
   iterm2
   utorrent
-  vagrant
-  virtualbox
   vlc
-  sourcetree
   sublime-text
   skitch
   skype
