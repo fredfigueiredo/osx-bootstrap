@@ -31,7 +31,7 @@ function install_app() {
 }
 
 # Homebrew Cask is required
-if test $(brew list | grep 'brew-cask'); then
+if test $(brew list | grep 'cask'); then
   # Control var for installing apps without confirmation
   install_without_confirm=0
 
