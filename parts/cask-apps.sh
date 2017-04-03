@@ -6,6 +6,7 @@
 apps=(
   1password
   appcleaner
+  bittorrent
   caffeine
   dropbox
   evernote
@@ -13,7 +14,6 @@ apps=(
   franz
   google-chrome
   iterm2
-  utorrent
   vlc
   sublime-text
   skitch
