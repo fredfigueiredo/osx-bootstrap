@@ -19,6 +19,7 @@ apps=(
   skitch
   skype
   the-unarchiver
+  zoomus
 )
 
 function install_app() {
