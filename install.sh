@@ -38,7 +38,7 @@ parts=(
   'yadr::1::Install shell awesomeness and much more (with YADR)'
   'config-zsh::1::Configure ZSH (requires YARD)'
   'npm::1::Install Node.js, npm, grunt, and others'
-  'config-sublime::1::Configure Sublime Text 2'
+  'config-sublime::1::Configure Sublime Text'
 )
 
 for part in "${parts[@]}"
