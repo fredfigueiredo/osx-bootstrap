@@ -1,12 +1,12 @@
-# Configure Sublime Text 2: http://www.sublimetext.com/2
+# Configure Sublime Text: http://www.sublimetext.com
 
 sublime_templates="$HOME/.osx-bootstrap/templates/sublime"
-sublime_user_folder="$HOME/Library/Application Support/Sublime Text 2"
-sublime_bin_folder='/Applications/Sublime Text 2.app/Contents/SharedSupport/bin'
+sublime_user_folder="$HOME/Library/Application Support/Sublime Text 3"
+sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport/bin'
 
 if test -d "$sublime_bin_folder"; then
 
-  info 'Customizing Sublime Text2...'
+  info 'Customizing Sublime Text...'
 
   # Open and close sublime to create user folder if needed
   if test ! -d "$sublime_user_folder"; then
@@ -29,13 +29,15 @@ if test -d "$sublime_bin_folder"; then
   cp -f "$sublime_templates/Package Control.sublime-settings" \
     "$sublime_user_folder/Packages/User"
 
-  # Set alias to Sublime 2
+  # Set alias to Sublime
   if test -d ~/.yadr; then
     ln -sf "$sublime_bin_folder/subl" ~/.yadr/bin
   else
     ln -sf "$sublime_bin_folder/subl" /usr/local/bin/subl
   fi
+  
+  info 'Sublime Text customized!'
 
 else
-  log 'Sublime Text 2 is not installed. Skipping.'
+  log 'Sublime Text is not installed. Skipping.'
 fi
