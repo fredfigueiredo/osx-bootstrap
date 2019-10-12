@@ -8,7 +8,6 @@ apps=(
   adobe-acrobat-reader
   dropbox
   evernote
-  firefox
   franz
   google-chrome
   iterm2
