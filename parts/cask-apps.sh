@@ -5,20 +5,20 @@
 # Change the list to reflect your needs
 apps=(
   1password
-  appcleaner
-  bittorrent
-  caffeine
+  adobe-acrobat-reader
   dropbox
   evernote
   firefox
   franz
   google-chrome
   iterm2
+  plex-media-player
   vlc
+  slack
   sublime-text
+  sublime-merge
   skitch
   skype
-  the-unarchiver
   zoomus
 )
 
