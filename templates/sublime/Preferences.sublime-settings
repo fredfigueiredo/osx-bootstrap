@@ -1,5 +1,5 @@
 {
-  "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+  "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
   "dictionary": "Packages/Language - English/en_US.dic",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": false,
@@ -32,6 +32,7 @@
   ],
   "spell_check": true,
   "tab_size": 2,
+  "theme": "Material-Theme-Darker.sublime-theme",
   "trailing_spaces_include_current_line": false,
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true
