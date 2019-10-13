@@ -15,7 +15,7 @@ if test -d "$sublime_bin_folder"; then
   fi
 
   # Closes any open instance of sublime
-  kill $(ps aux | grep 'sublime' | awk '{print $2}') 2>/dev/null
+  kill $(ps aux | grep 'Sublime Text' | awk '{print $2}') 2>/dev/null
 
   # Set user preferences
   cp -f "$sublime_templates/Preferences.sublime-settings" \
