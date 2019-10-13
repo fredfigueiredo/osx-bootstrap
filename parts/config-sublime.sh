@@ -2,7 +2,7 @@
 
 sublime_templates="$HOME/.osx-bootstrap/templates/sublime"
 sublime_user_folder="$HOME/Library/Application Support/Sublime Text 3"
-sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport/MacOS'
+sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
 
 if test -d "$sublime_bin_folder"; then
 
