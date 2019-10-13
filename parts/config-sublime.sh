@@ -2,7 +2,7 @@
 
 sublime_templates="$HOME/.osx-bootstrap/templates/sublime"
 sublime_user_folder="$HOME/Library/Application Support/Sublime Text 3"
-sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport'
 
 if test -d "$sublime_bin_folder"; then
 
@@ -10,7 +10,7 @@ if test -d "$sublime_bin_folder"; then
 
   # Open and close sublime to create user folder if needed
   if test ! -d "$sublime_user_folder"; then
-    "$sublime_bin_folder/Sublime Text"
+    "$sublime_bin_folder/bin/subl"
     sleep 3
   fi
 
@@ -31,9 +31,9 @@ if test -d "$sublime_bin_folder"; then
 
   # Set alias to Sublime
   if test -d ~/.yadr; then
-    ln -sf "$sublime_bin_folder/Sublime Text" ~/.yadr/bin
+    ln -sf "$sublime_bin_folder/bin/subl" ~/.yadr/bin
   else
-    ln -sf "$sublime_bin_folder/Sublime Text" /usr/local/bin/subl
+    ln -sf "$sublime_bin_folder/bin/subl" /usr/local/bin/subl
   fi
   
   info 'Sublime Text customized!'
