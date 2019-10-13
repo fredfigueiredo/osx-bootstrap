@@ -1,9 +1,11 @@
 {
   "installed_packages":
   [
+    "A File Icon",
     "Emmet",
     "GitHub Flavored Markdown Preview",
     "Markdown Preview",
+    "Material Theme",
     "Package Control"
   ]
 }
