@@ -14,14 +14,13 @@ apps=(
   obs
   plex-media-player
   plex-media-server
-  transmission
   slack
   sublime-text
   sublime-merge
   skitch
   skype
   vlc
-  zoomus
+  zoom
 )
 
 function install_app() {
