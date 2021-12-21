@@ -4,26 +4,29 @@
 # Check existing applications with 'brew cask search'
 # Change the list to reflect your needs
 apps=(
-  1password
-  adobe-acrobat-reader
+  atext
+  caffeine
   dropbox
   evernote
-  franz
   google-chrome
   iterm2
+  loopback
+  obs
   plex-media-player
-  vlc
+  plex-media-server
+  transmission
   slack
   sublime-text
   sublime-merge
   skitch
   skype
+  vlc
   zoomus
 )
 
 function install_app() {
-  if test ! $(brew cask list | grep $app); then
-    brew cask install --appdir="/Applications" $app
+  if test ! $(brew list | grep $app); then
+    brew install --appdir="/Applications" $app
   else
     echo "$app already installed."
   fi
@@ -55,7 +58,7 @@ if test $(brew list | grep 'cask'); then
   done
 
   # Cleanup downloaded files
-  brew cask cleanup
+  brew cleanup
 else
   log 'Skipping, Homebrew Cask not installed!'
 fi
