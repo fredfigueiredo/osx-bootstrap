@@ -12,7 +12,6 @@ apps=(
   iterm2
   loopback
   obs
-  plex-media-player
   plex-media-server
   slack
   sublime-text
