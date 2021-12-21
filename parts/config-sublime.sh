@@ -1,7 +1,7 @@
 # Configure Sublime Text: http://www.sublimetext.com
 
 sublime_templates="$HOME/.osx-bootstrap/templates/sublime"
-sublime_user_folder="$HOME/Library/Application Support/Sublime Text 3"
+sublime_user_folder="$HOME/Library/Application Support/Sublime Text"
 sublime_bin_folder='/Applications/Sublime Text.app/Contents/SharedSupport'
 
 if test -d "$sublime_bin_folder"; then
