@@ -17,6 +17,7 @@ if test $(which brew); then
     npm install -g yo        # Yeoman, scaffolding tool
     npm install -g bower     # Bower, web packet manager tool
     npm install -g grunt-cli # Grunt, build tool
+    npm install gulp-cli -g  # Gulp, build tool
 
     sudo gem install compass # Compass, CSS authoring framework
 
