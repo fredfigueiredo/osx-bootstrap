@@ -7,18 +7,18 @@ apps=(
   atext
   caffeine
   dropbox
-  evernote
   google-chrome
   iterm2
   loopback
+  notion
   obs
   plex-media-server
   slack
   sublime-text
   sublime-merge
   skitch
-  skype
   vlc
+  whatsapp
   zoom
 )
 
